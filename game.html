@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissor Game</h1>
+
+    <button class="game" onclick="
+    let computerMove=generateComputerChoice();
+    let result =generateResult(`Rock`,computerMove);
+    showResult(`Rock`,computerMove,result);
+    "><img src="images/rock-banner-img.png" alt="rock image" class="choice-image"></button>
+
+    <button class="game" onclick="
+    computerMove=generateComputerChoice();
+    result=generateResult(`Paper`,computerMove);
+    showResult(`Paper`,computerMove,result);
+    "><img src="images/paper-banner-img.png" alt="paper-image" class="choice-image"></button>
+
+    <button class="game" onclick="
+    computerMove=generateComputerChoice();
+    result=generateResult(`Scissor`,computerMove);
+    showResult(`Scissor`,computerMove,result);
+    "><img src="images/scissors-banner-img.png" alt="scissor-image" class="choice-image"></button>
+
+    <button onclick="
+    localStorage.clear()
+    resetScore();
+    ">Reset</button>
+
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="showResult"></h3>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

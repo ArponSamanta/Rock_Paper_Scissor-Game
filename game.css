@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+.game{
+    color:rgb(66, 4, 66);
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 100px;
+    margin: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.choice-image{
+    height: 175px;;
+}
